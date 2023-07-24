@@ -6,7 +6,8 @@
     <Window/>
     <MainBodyText/>
 
-    <h1>(509)818-0247</h1>
+
+    <InfoBody/>
  
 
 </template>
@@ -14,7 +15,8 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
 import Window from './components/ImageViewer.vue'
-import MainBodyText from './components/MainBodyText.vue';
+import MainBodyText from './components/MainBodyText.vue'
+import InfoBody from './components/InfoBody.vue'
 </script>
 <style scoped>
 
