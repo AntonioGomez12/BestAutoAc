@@ -1,7 +1,7 @@
 <template>
     <div class="image-viewer">
       <!-- Image container with navigation buttons -->
-      <div class="image-container">
+     
         <!-- Navigation buttons -->
         <v-btn
           variant="icon"
@@ -36,7 +36,7 @@
             <span class="mdi mdi-record"></span>
           </v-btn>
         </v-card-actions>
-      </div>
+     
     </div>
   </template>
   
@@ -97,21 +97,16 @@
   /* Add your CSS styles for the image viewer here */
   .image-viewer {
     display: flex;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 75vh;
     width: 100%;
   }
   
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: 60%;
-  }
-  
+
   .image {
     width: 100%;
     height: 100%;
