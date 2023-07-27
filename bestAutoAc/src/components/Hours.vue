@@ -11,9 +11,6 @@
             <li>Sun: Closed</li>
         </ul>
     </div>
-    <div class="info2">
-
-    </div>
 </template>
 <style scoped>
     .info1{
