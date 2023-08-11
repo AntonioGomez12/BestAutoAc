@@ -20,7 +20,7 @@
         justify-content: center;
         height: 20vw;
         width: 100%;
-        background-color: lightblue;
+        background-color: lightskyblue;
         
     }
 </style>

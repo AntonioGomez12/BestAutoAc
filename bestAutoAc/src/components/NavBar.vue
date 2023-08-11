@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar">
-      <div class="logo">
+        <div class="logo">
         <img src="@/assets/logo.jpeg" alt="Logo" />
       </div>
       <ul class="nav-links">
@@ -9,21 +9,17 @@
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
+
     </nav>
   </template>
-  
-  <script>
-  export default {
-    name: "NavigationBar",
-  };
-  </script>
   
   <style>
   /* Add your CSS styles for the navigation bar here */
   .navbar {
     display: flex;
+    flex-direction: row;
     width: 100%;
-    height: 17.5%; /* Set the height of the navigation bar */
+    height: 15vh; /* Set the height of the navigation bar */
     position: relative;
     top: 0;
     left: 0;

@@ -2,12 +2,13 @@
   <title>BestAutoAc</title>
  
   <NavBar/>
-
     <Window/>
     <MoneyBack/>
     <MainBodyText/>
     <WhatWeDo/>
     <Hours/>
+    <Footer/>
+    
 
 
 </template>
@@ -19,6 +20,7 @@ import MainBodyText from './components/MainBodyText.vue'
 import Hours from './components/Hours.vue'
 import WhatWeDo from './components/WhatWeDo.vue'
 import MoneyBack from './components/MoneyBack.vue'
+import Footer from './components/Footer.vue'
 </script>
 <style scoped>
 

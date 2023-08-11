@@ -1,49 +1,76 @@
 <template>
-    <div class="flex-container">
-        <div class="info1">
-        <h1>Our services</h1>
-        <ul>
-            <li>AC top off</li>
-            <li>AC extraction (if you need your system emptied then returned)</li>
-            <li>Diagnosing of ac system</li>
-            <li>AC system repairs</li>
-        </ul>
-    </div>
-    <div class="info2">
-        <h1>Our Rates</h1>
-        <ul>
-            <li>AC refrigerant @4.99 per ounce</li>
-            <li>Service fee $29.99</li>
-            <li>$80 per hour labor if system repairs are needed</li>
-        </ul>
-        <h1>We only charge you for what you need!</h1>
-    </div>
-    </div>
+
+<div class="row">
+
+    <div>
+    <v-hover v-slot="{ isHovering, props }">
+      <v-card
+        class="mx-auto"
+        color="grey-lighten-4"
+        max-width="600"
+        v-bind="props"
+      >
+        <v-img
+          :aspect-ratio="16/9"
+          cover
+          src="@/assets/acRefill.jpeg"
+        >
+          <v-expand-transition>
+            <div
+              v-if="isHovering"
+              class="d-flex transition-fast-in-fast-out bg-orange-darken-2 v-card--reveal text-h2"
+              style="height: 100%;"
+            >
+              $14.99
+            </div>
+          </v-expand-transition>
+        </v-img>
+
+        <v-card-text class="pt-6">
+          <div class="font-weight-light text-grey text-h6 mb-2">
+            For the perfect meal
+          </div>
+
+          <h3 class="text-h4 font-weight-light text-orange mb-2">
+            QW cooking utensils
+          </h3>
+
+          <div class="font-weight-light text-h6 mb-2">
+            Our Vintage kitchen utensils delight any chef.<br>
+            Made of bamboo by hand
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-hover>
+  </div>
+
+<!--Right side data for prices-->
+<div class="prices">
+    <h1 class="d-flex justify-center">Prices</h1>
+    <v-expansion-panels variant="accordion">
+  <v-expansion-panel
+    v-for="i in 3"
+    :key="i"
+    title="Item"
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  ></v-expansion-panel>
+</v-expansion-panels>
+</div>
+
+</div>
+
 
 </template>
 <style scoped>
-    .flex-container{
+    .row{
         display: flex;
         flex-direction: row;
+        background-color: lightskyblue;
     }
-
-    .info1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 3px solid gray;
+    .services{
         width: 50%;
-        height: 50vh;
     }
-    .info2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border: 3px solid grey;
+    .prices{
         width: 50%;
-        height: 50vh;
-    }
-
+   }
 </style>

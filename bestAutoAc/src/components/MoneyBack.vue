@@ -14,7 +14,7 @@
     }
     h1{
         font-size: 2rem;
-        color: white;
+        color: skyblue;
         z-index: 2;
     }
 </style>

@@ -2,23 +2,7 @@
     <div class="image-viewer">
       <!-- Image container with navigation buttons -->
      
-        <!-- Navigation buttons -->
-        <v-btn
-          variant="icon"
-          :disabled="currentIndex === 0"
-          @click="prev"
-          class="nav-button left"
-        >
-          <span class="mdi mdi-chevron-left"></span>
-        </v-btn>
-        <v-btn
-          variant="icon"
-          :disabled="currentIndex === images.length - 1"
-          @click="next"
-          class="nav-button right"
-        >
-          <span class="mdi mdi-chevron-right"></span>
-        </v-btn>
+ 
   
         <!-- Image -->
         <img :src="currentImage" alt="Image" class="image" />
@@ -120,14 +104,7 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-  }
-  
-  .nav-button.left {
-    left: 0;
-  }
-  
-  .nav-button.right {
-    right: 0;
+    
   }
   
   .indicators-container {
